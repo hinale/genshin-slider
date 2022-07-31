@@ -1,0 +1,1 @@
+# Slider com personagens do jogo Genshin Impact
