@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .cabecalho img {
@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  margin: 60px 0;
+  margin: 40px 0;
 }
 
 .lista {
@@ -75,7 +75,33 @@ body {
 }
 
 .fundo-kazuha {
-  background: url('../img/fundo-kazuha.png');
+  background: url('../img/kazuha-card.png');
+  background-size: cover;
+}
+
+.fundo-yelan {
+  background: url('../img/yelan-card.png');
+  background-size: cover;
+}
+
+.fundo-yanfei {
+  background: url('../img/yanfei-card.png');
+  background-size: cover;
+}
+
+.fundo-fischl {
+  background: url('../img/fischl-card.png');
+  background-size: cover;
+}
+
+.fundo-chongyun {
+  background: url('../img/chongyun-card.png');
+  background-size: cover;
+}
+
+.fundo-gorou {
+  background: url('../img/gorou-card.png');
+  background-size: cover;
 }
 
 .cartao .informacoes {
@@ -113,16 +139,6 @@ body {
   color: #fff;
 }
 
-.cartao .container-imagem {
-  text-align: center;
-}
-
-.cartao .img-personagem {
-  max-width: 100%;
-  max-height: 280px;
-  padding: 20px;
-}
-
 .cartao .descricao {
   background: rgba(255, 255, 255, 0.8);
   border-bottom-left-radius: 10px;
@@ -143,4 +159,64 @@ body {
   text-align: justify;
   max-height: 115px;
   overflow-y: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+.texto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.texto::-webkit-scrollbar {
+  width: 4px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.texto::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+@media (max-width: 620px) {
+  .conteudo-principal {
+    padding: 0 15px;
+    gap: 10px;
+  }
+
+  .btn-seta {
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lista {
+    height: 480px;
+  }
+
+  .cartao .informacoes .nome {
+    max-width: 50%;
+    font-size: 18px;
+  }
+
+  .cartao .informacoes .tipo .imagem {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cartao .informacoes .tipo .texto {
+    font-size: 14px;
+  }
 }
